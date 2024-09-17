@@ -18,22 +18,14 @@ body {
 img{
   display: block;
 }
-ul {
+ul,ol {
   list-style: none;
   margin: 0;
   padding-left: 0;
   display: flex;
   gap: 24px;
   flex-wrap: wrap
-}
 
-ol {
-  list-style: none;
-  margin: 0;
-  padding-left: 0;
-  display: flex;
-  gap: 24px;
-  flex-wrap: wrap
 }
 
 :root {
@@ -75,22 +67,13 @@ ol {
   padding: 0 15px;
 }
 
-
-.logo-nav {
+logo-nav {
   display: flex;
   align-items: center;
-  font-family: "Raleway" ;
-  font-weight: 700;
-  font-size:18px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #4d5ae5;
-
 }
 
 .logo-link {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   color: #4d5ae5;
   font-size: 18px;
   font-weight: 800;
@@ -101,13 +84,8 @@ ol {
   text-decoration: none;
 }
 
-.logo-part {
-  color: #2e2f42;
-  font-family: "Raleway";
-}
-
 .logo {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   color: #4d5ae5;
   font-size: 18px;
   line-height: 1.17;
@@ -117,7 +95,8 @@ ol {
 }
 
 .logo-part {
-  font-family: "Raleway";
+  color: #2e2f42;
+  font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 1.17em;
@@ -125,6 +104,7 @@ ol {
   text-transform: uppercase;
   display: inline-block;
 }
+
 
 /* Page description */
 .list {
