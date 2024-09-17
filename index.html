@@ -2,48 +2,54 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
-      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.0/modern-normalize.min.css"
+      integrity="sha512-3axTZ/bKFZH5/qLFTl4U+mDbBDFW+5QO5L7D1HnOhlhJbcNDIVJxoNm6It77g0eUdzfKZlHirayqRC2qJaAOJw=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
+
   <body>
-    <header class="header">
-      <div class="container container-header">
-        <nav class="logo-nav">
-          <a href="./index.html" class="logo-link">
-            Web
-            <span class="logo-part">Studio</span>
+    <header class="page-header">
+      <div class="container">
+        <nav class="page-header-container">
+          <a class="logo-link" href="#">
+            <span class="logo-text1">WEB</span
+            ><span class="logo-text2">STUDIO</span>
           </a>
-          <ul class="list">
-            <li>
-              <a class="page-description-link" href="./index.html">Studio</a>
+          <ul class="page-navigation-list">
+            <li class="item-navigation">
+              <a class="link" href="#">Studio</a>
             </li>
-            <li>
-              <a class="page-description-link" href="./portfolio.html">Portfolio</a>
+            <li class="item-navigation">
+              <a class="link" href="#">Portfolio</a>
             </li>
-            <li><a class="page-description-link" href="">Contacts</a></li>
+            <li class="item-navigation">
+              <a class="link" href="#">Contacts</a>
+            </li>
           </ul>
         </nav>
-        <address class="contact">
-          <ul class="list">
+
+        <address>
+          <ul class="adress-list">
             <li>
-              <a href="mailto:info@devstudio.com" class="address-description link">info@devstudio.com</a>
+              <a class="link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
             </li>
             <li>
-              <a href="tel:+110001111111" class="address-description link">+11 (000) 111-11-11</a>
+              <a class="link" href="tel:+110001111111">+11 (000) 111-11-11</a>
             </li>
           </ul>
         </address>
@@ -51,40 +57,41 @@
     </header>
 
     <main>
-      <section class="section main-title">
-        <div class="container">
-          <h1 class="main-text">Effective Solutions for Your Business</h1>
-          <button class="hero-button" type="button">Order Service</button>
+      <section class="page-hero section">
+        <div class="container container-hero">
+          <h1 class="page-title">Effective Solutions for Your Business</h1>
+
+          <button class="btn-page" type="button">Order Service</button>
         </div>
       </section>
-      <section class="section">
+      <section class="categories section">
         <div class="container">
-          <h2 class="visually-hidden">Our Goals</h2>
-          <ul class="goals-list">
-            <li class="goals-list-item">
-              <h3 class="goals-title">Strategy</h3>
-              <p class="goals-paragraph">
-                Our goal is to identify the business problem to walk away with the
-                perfect and creative solution.
+          <h2 class="visually-hidden"></h2>
+          <ul class="categorie-list">
+            <li class="categorie-list-item">
+              <h3 class="categorie-list-header">Strategy</h3>
+              <p>
+                Our goal is to identify the business problem to walk away with
+                the perfect and creative solution.
               </p>
             </li>
-            <li class="goals-list-item">
-              <h3 class="goals-title">Punctuality</h3>
-              <p class="goals-paragraph">
+            <li class="categorie-list-item">
+              <h3 class="categorie-list-header">Punctuality</h3>
+              <p>
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
             </li>
-            <li class="goals-list-item">
-              <h3 class="goals-title">Diligence</h3>
-              <p class="goals-paragraph">
+            <li class="categorie-list-item">
+              <h3 class="categorie-list-header">Diligence</h3>
+              <p>
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
               </p>
             </li>
-            <li class="goals-list-item">
-              <h3 class="goals-title">Technologies</h3>
-              <p class="goals-paragraph">
+            <li class="categorie-list-item">
+              <h3 class="categorie-list-header">Technologies</h3>
+              <p>
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
               </p>
@@ -92,145 +99,92 @@
           </ul>
         </div>
       </section>
-      <section class="section our-team-background">
-        <div class="container">
-          <h2 class="our-team-title">Our Team</h2>
-          <ul class="our-team-title-list list">
-            <li class="our-team-box">
+      <section class="team section">
+        <div class="container column-container">
+          <h2 class="team-header">Our Team</h2>
+          <ul class="team-list">
+            <li class="team-list-item">
               <img
-                class="img"
-                src="images/img.jpg"
-                alt="Mark Guerrero, Product Designer"
-                width="264"
-                height="260"
+                src="./images/img.jpg"
+                alt="Mark Guerrero-Product Designer"
               />
-              <div class="our-team-names">
-                <h3 class="our-team-name">Mark Guerrero</h3>
-                <p class="our-team-paragraph">Product Designer</p>
+              <div class="team-info">
+                <h3 class="team-name">Mark Guerrero</h3>
+                <p class="team-text">Product Designer</p>
               </div>
             </li>
-            <li class="our-team-box">
-              <img
-                class="img"
-                src="images/img-2.jpg"
-                alt="Tom Ford, Frontend Developer"
-                width="264"
-                height="260"
-              />
-              <div class="our-team-names">
-                <h3 class="our-team-name">Tom Ford</h3>
-                <p class="our-team-paragraph">Frontend Developer</p>
+            <li class="team-list-item">
+              <img src="./images/img-2.jpg" alt="Tom Ford-Frontend Developer" />
+              <div class="team-info">
+                <h3 class="team-name">Tom Ford</h3>
+                <p class="team-text">Frontend Developer</p>
               </div>
             </li>
-            <li class="our-team-box">
-              <img
-                class="img"
-                src="images/img-3.jpg"
-                alt="Camila Garcia, Marketing"
-                width="264"
-                height="260"
-              />
-              <div class="our-team-names">
-                <h3 class="our-team-name">Camila Garcia</h3>
-                <p class="our-team-paragraph">Marketing</p>
+            <li class="team-list-item">
+              <img src="./images/img-3.jpg" alt="Camila Garcia-Marketing" />
+              <div class="team-info">
+                <h3 class="team-name">Camila Garcia</h3>
+                <p class="team-text">Marketing</p>
               </div>
             </li>
-            <li class="our-team-box">
-              <img
-                class="img"
-                src="images/img-4.jpg"
-                alt="Daniel Wilson, UI Designer"
-                width="264"
-                height="260"
-              />
-              <div class="our-team-names">
-                <h3 class="our-team-name">Daniel Wilson</h3>
-                <p class="our-team-paragraph">UI Designer</p>
+            <li class="team-list-item">
+              <img src="./images/img-4.jpg" alt="Daniel Wilson-UI Designer" />
+              <div class="team-info">
+                <h3 class="team-name">Daniel Wilson</h3>
+                <p class="team-text">UI Designer</p>
               </div>
             </li>
           </ul>
         </div>
       </section>
-      <section class="section our-portfolio-background">
-        <div class="container">
-          <h2 class="our-portfolio-title">Our Portfolio</h2>
-          <ul class="our-portfolio-title-list">
-            <li class="our-portfolio-box">
-              <img
-                class="img"
-                src="images/project_card_1.jpg"
-                alt="Banking App"
-                width="264"
-                height="260"
-              />
-              <div class="our-portfolio-names">
-                <h3 class="our-portfolio-name">Banking App</h3>
-                <p class="our-portfolio-paragraph">App</p>
+
+      <section class="portfolio section">
+        <div class="container column-container">
+          <h2 class="portfolio-title">Our Portfolio</h2>
+          <ul class="portfolio-list">
+            <li class="portfolio-item">
+              <img src="./images/project_card_1.jpg" alt="Banking App" />
+              <div class="border">
+                <h3 class="portfolio-header">Banking App</h3>
+                <p>App</p>
               </div>
             </li>
-            <li class="our-portfolio-box">
-              <img
-                class="img"
-                src="images/project_card_2.jpg"
-                alt="Cashless Payment"
-                width="264"
-                height="260"
-              />
-              <div class="our-portfolio-names">
-                <h3 class="our-portfolio-name">Cashless Payment</h3>
-                <p class="our-portfolio-paragraph">Marketing</p>
+            <li class="portfolio-item">
+              <img src="./images/project_card_2.jpg" alt="Cashless Payment" />
+              <div class="border">
+                <h3 class="portfolio-header">Cashless Payment</h3>
+                <p>Marketing</p>
               </div>
             </li>
-            <li class="our-portfolio-box">
-              <img
-                class="img"
-                src="images/project_card_3.jpg"
-                alt="Meditation App"
-                width="264"
-                height="260"
-              />
-              <div class="our-portfolio-names">
-                <h3 class="our-portfolio-name">Meditation App</h3>
-                <p class="our-portfolio-paragraph">App</p>
+            <li class="portfolio-item">
+              <img src="./images/project_card_3.jpg" alt="Meditation App" />
+              <div class="border">
+                <h3 class="portfolio-header">Meditation App</h3>
+                <p>App</p>
               </div>
             </li>
-            <li class="our-portfolio-box">
-              <img
-                class="img"
-                src="images/project_card_4.jpg"
-                alt="Taxi Service"
-                width="264"
-                height="260"
-              />
-              <div class="our-portfolio-names">
-                <h3 class="our-portfolio-name">Taxi Service</h3>
-                <p class="our-portfolio-paragraph">Marketing</p>
+            <li class="portfolio-item">
+              <img src="./images/project_card_4.jpg" alt="Taxi Service" />
+              <div class="border">
+                <h3 class="portfolio-header">Taxi Service</h3>
+                <p>Marketing</p>
               </div>
             </li>
-            <li class="our-portfolio-box">
+            <li class="portfolio-item">
               <img
-                class="img"
-                src="images/project_card_5.jpg"
-                alt="Screen Illustrations"
-                width="264"
-                height="260"
+                src="./images/project_card_5.jpg"
+                alt="Screen illustrations"
               />
-              <div class="our-portfolio-names">
-                <h3 class="our-portfolio-name">Screen Illustrations</h3>
-                <p class="our-portfolio-paragraph">Design</p>
+              <div class="border">
+                <h3 class="portfolio-header">Screen Illustrations</h3>
+                <p>Design</p>
               </div>
             </li>
-            <li class="our-portfolio-box">
-              <img
-                class="img"
-                src="images/project_card_6.jpg"
-                alt="Online Courses"
-                width="264"
-                height="260"
-              />
-              <div class="our-portfolio-names">
-                <h3 class="our-portfolio-name">Online Courses</h3>
-                <p class="our-portfolio-paragraph">Marketing</p>
+            <li class="portfolio-item">
+              <img src="./images/project_card_6.jpg" alt="Online Courses" />
+              <div class="border">
+                <h3 class="portfolio-header">Online Courses</h3>
+                <p>Marketing</p>
               </div>
             </li>
           </ul>
@@ -238,25 +192,15 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container">
-        <a href="./index.html" class="footer-logo">
-          Web<span class="footer-logo-part">Studio</span>
+      <div class="container container-footer">
+        <a class="footer-logo-link" href="#">
+          <span class="logo-text1">WEB</span
+          ><span class="logo-text2">STUDIO</span>
         </a>
-        <ul class="footer-list list">
-          <li><a href="./index.html" class="footer-link">Studio</a></li>
-          <li><a href="./portfolio.html" class="footer-link">Portfolio</a></li>
-          <li><a href="" class="footer-link">Contacts</a></li>
-        </ul>
-        <address class="footer-contact">
-          <ul class="footer-list list">
-            <li>
-              <a href="mailto:info@devstudio.com" class="footer-address link">info@devstudio.com</a>
-            </li>
-            <li>
-              <a href="tel:+110001111111" class="footer-address link">+11 (000) 111-11-11</a>
-            </li>
-          </ul>
-        </address>
+        <p class="text">
+          Increase the flow of customers and sales for your business with
+          digital marketing & growth solutions.
+        </p>
       </div>
     </footer>
   </body>
