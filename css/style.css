@@ -14,7 +14,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   font-family: "Raleway";
-  color: #4d5ae5;
+  color: #2e2f42
 }
 .logo{
   font-weight: 700;
@@ -23,7 +23,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #f4f4fd; 
-  font-family: "Raleway", sans-serif;
+  font-family: "Raleway";
 }
 .page-link {
   font-weight: 700;
