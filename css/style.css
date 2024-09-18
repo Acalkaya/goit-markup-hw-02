@@ -23,7 +23,6 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #f4f4fd; 
-  font-family: "Raleway";
 }
 .page-link {
   font-weight: 700;
@@ -216,7 +215,6 @@ body {
 
 .come {
   background: #2e2f42;
-  font-family: "Raleway"
 
 }
 .come-text {
@@ -225,6 +223,5 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
-  font-family: "Raleway"
 
 }
