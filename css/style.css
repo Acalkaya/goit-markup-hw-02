@@ -4,11 +4,8 @@ body {
   font-family: "Roboto", sans-serif 
 }
 .page-header {
-  color:#2e2f42;
   font-family: "Raleway";
   color: #2e2f42;
-
-
 }
 .plan-name {
   font-weight: 700;
@@ -228,5 +225,6 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  font-family: "Raleway"
 
 }
