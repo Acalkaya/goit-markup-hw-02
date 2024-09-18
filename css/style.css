@@ -5,6 +5,9 @@ body {
 }
 .page-header {
   color:#2e2f42;
+  font-family: "Raleway";
+  color: #2e2f42;
+
 
 }
 .plan-name {
@@ -216,6 +219,7 @@ body {
 
 .come {
   background: #2e2f42;
+  font-family: "Raleway"
 
 }
 .come-text {
